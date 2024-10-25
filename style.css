@@ -178,25 +178,54 @@ footer a:hover {
 /* Add responsive design adjustments */
 @media (max-width: 768px) {
     /* Stack navigation items vertically */
-    nav ul {
-        display: block;
-    }
-    
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    /* Adjust layout for mobile */
-    .main-content {
-        width: 100%;
-        padding: 10px;
-    }
+ nav ul {
+  display: block;
+ }
 
-    .cta-button, .nav-button, .learn-more-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+ nav ul li {
+  display: block;
+  margin-bottom: 10px;
+ }
+
+ .top-nav ul {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .main-header h1 {
+  font-size: 1.8em;
+ }
+
+ /* Adjust layout for mobile */
+ .main-content {
+  width: 100%;
+  padding: 10px;
+ }
+
+ .header-actions {
+  display: grid;
+ }
+
+ .button-container {
+  flex-direction: column;
+  margin: 0px 30px 0px 0px;
+ }
+ /* Adjust footer padding and font size */
+ footer {
+  padding: 10px;
+  font-size: 0.8em;
+ }
+
+ .cta-button,
+ .nav-button,
+ .learn-more-button {
+  display: block;
+  width: auto;
+  text-align: center;
+  margin-bottom: 10px;
+ }
+
+ .cta-button {
+  margin-right: 0;
+ }
 }
